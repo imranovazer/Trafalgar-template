@@ -1,0 +1,49 @@
+.main-nav {
+    width: 100%;
+    .container {
+        padding-top: 56px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #1F1534;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            font-weight: 700;
+            div {
+                font-size: 26px;
+                color: white;
+                width: 41px;
+                height: 41px;
+                border-radius: 50%;
+                background-color: #458FF6;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            p {
+                color: #233348;
+             
+                font-size: 24px;
+            }
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            li {
+                cursor: pointer;
+                span {
+                    font-weight: 700;
+                }
+            }
+
+        }
+    }
+}

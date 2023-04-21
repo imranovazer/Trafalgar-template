@@ -1,0 +1,71 @@
+.main-nav {
+  width: 100%;
+}
+.main-nav .container {
+  padding-top: 56px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1F1534;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-nav .container .logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-weight: 700;
+}
+.main-nav .container .logo div {
+  font-size: 26px;
+  color: white;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: #458FF6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-nav .container .logo p {
+  color: #233348;
+  font-size: 24px;
+}
+.main-nav .container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.main-nav .container ul li {
+  cursor: pointer;
+}
+.main-nav .container ul li span {
+  font-weight: 700;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../../fonts/Mulish-VariableFont_wght.ttf");
+}
+ul, li {
+  list-style-type: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish";
+}
+
+/*# sourceMappingURL=style.css.map */
