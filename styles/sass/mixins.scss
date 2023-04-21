@@ -1,0 +1,42 @@
+@mixin about-section {
+    .about-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+         h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: black;
+         }
+         .divider {
+            width: 56px;
+            height: 2px;
+            border-radius: 5px;
+            background-color: black;
+         }
+         p {
+            color: #7D7987;
+            font-size: 18px;
+            font-weight: 300;
+            text-align: center;
+            max-width: 950px;
+         }
+    }
+}
+@mixin button {
+   border-radius: 55px;
+   background-color: white;
+   color: #458FF6;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 18px;
+   font-weight: 700;
+   border: none;
+   border: 1px solid #458FF6;
+   max-width: 200px;
+  margin: 0 auto;
+  padding: 15px 50px;
+  cursor: pointer;
+}

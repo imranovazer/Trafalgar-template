@@ -46,13 +46,209 @@
   font-weight: 700;
 }
 
+@media screen and (max-width: 780px) {
+  .main-nav .container ul {
+    display: none;
+  }
+}
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
+  padding: 0 30px;
 }
 
+header {
+  width: 100%;
+}
+header .container {
+  position: relative;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+header .container .element {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: -100px;
+}
+header .container .left {
+  width: 50%;
+  max-width: 445px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+header .container .left h1 {
+  color: #000000;
+  font-size: 48px;
+  font-weight: 700;
+}
+header .container .left p {
+  color: #7D7987;
+  font-size: 21px;
+  font-weight: 300;
+}
+header .container .left button {
+  max-width: 200px;
+  width: 100%;
+  color: white;
+  display: flex;
+  border: none;
+  background-color: #458FF6;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding: 15px 0;
+  font-weight: 700;
+  border-radius: 55px;
+  cursor: pointer;
+}
+header .container .right {
+  width: 50%;
+}
+header .container .right img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  header .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
+  }
+  header .container .right, header .container .left {
+    max-width: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+.our-services {
+  width: 100%;
+}
+.our-services .container {
+  padding: 150px 30px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 80px;
+}
+.our-services .container .element {
+  width: 130px;
+  position: absolute;
+  right: 0;
+  top: 700px;
+  z-index: -1;
+}
+.our-services .container .vector {
+  position: absolute;
+  z-index: -1;
+  left: -200px;
+  top: 300px;
+}
+.our-services .container .about-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.our-services .container .about-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: black;
+}
+.our-services .container .about-section .divider {
+  width: 56px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: black;
+}
+.our-services .container .about-section p {
+  color: #7D7987;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  max-width: 950px;
+}
+.our-services .container .services-grid {
+  width: 100%;
+  max-width: 1120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.our-services .container .services-grid .card-container {
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-services .container .services-grid .card-container .service-card {
+  background-color: white;
+  width: 100%;
+  max-width: 350px;
+  height: 354px;
+  margin-bottom: 35px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  justify-content: space-around;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+}
+.our-services .container .services-grid .card-container .service-card img {
+  width: 90px;
+}
+.our-services .container .services-grid .card-container .service-card h3 {
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+}
+.our-services .container .services-grid .card-container .service-card p {
+  color: #7D7987;
+  font-size: 16px;
+  font-weight: 300;
+  max-width: 265px;
+}
+.our-services .container .button {
+  border-radius: 55px;
+  background-color: white;
+  color: #458FF6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border: 1px solid #458FF6;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 15px 50px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1160px) {
+  .our-services .container .services-grid .card-container {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .our-services .container .services-grid .card-container {
+    width: 100%;
+  }
+  .our-services .container .services-grid .card-container .service-card {
+    max-width: 80%;
+  }
+  .our-services .container .vector {
+    width: 200px;
+  }
+}
 @font-face {
   font-family: "Mulish";
   src: url("../../fonts/Mulish-VariableFont_wght.ttf");

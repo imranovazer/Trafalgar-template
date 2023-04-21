@@ -1,0 +1,74 @@
+header {
+    width: 100%;
+    .container {
+        position: relative;
+        padding: 50px 30px;
+        display: flex;
+        justify-content: space-between;
+        .element {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: -100px;
+        }
+        .left {
+            width: 50%;
+            max-width: 445px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            h1 {
+              color:   #000000 ;
+              font-size: 48px;
+              font-weight: 700;
+            }
+            p {
+                color: $font-color;
+                font-size: 21px;
+                font-weight: 300;
+            }
+
+            button {
+                max-width: 200px;
+                width: 100%;
+                color: white;
+                display: flex;
+                border: none;
+                background-color: #458FF6;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                padding: 15px 0;
+                font-weight: 700;
+                border-radius: 55px;
+                cursor: pointer;
+            }
+        }
+        .right {
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header .container { 
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+    }
+
+
+    header .container .right,  header .container .left {
+    
+        max-width: 100%;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}

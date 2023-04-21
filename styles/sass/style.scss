@@ -1,5 +1,9 @@
+@import 'vars';
+@import 'mixins' ;
 @import'components/navbar';
 @import 'outline/outline';
+@import 'sections/header' ;
+@import 'sections/our_services' ;
 
 @font-face {
     font-family: "Mulish";

@@ -1,0 +1,98 @@
+.our-services {
+    width: 100%;
+
+    .container {
+        padding: 150px 30px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        gap: 80px;
+        .element {
+            width: 130px;
+            position: absolute;
+            right: 0;
+            top: 700px;
+            z-index: -1;
+        }
+        .vector {
+            position: absolute;
+            z-index: -1;
+            left: -200px;
+            top: 300px; 
+        }
+        @include about-section ;
+
+        .services-grid {
+            width: 100%;
+            max-width: 1120px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .card-container {
+                width: 33.3%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .service-card {
+                        background-color: white;
+                        width: 100%;
+                        max-width: 350px;
+                        height: 354px;
+                        margin-bottom: 35px;
+                        padding: 40px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 22px;
+                        justify-content: space-around;
+                        // border: 1px solid black;
+                        box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+                        border-radius: 20px;
+                
+                        img {
+                            width: 90px;
+                        }
+                
+                        h3 {
+                            color: black;
+                            font-weight: 700;
+                            font-size: 24px;
+                        }
+                
+                        p {
+                            color: $font-color;
+                            font-size: 16px;
+                            font-weight: 300;
+                            max-width: 265px;
+                        }
+                    }
+            }
+           
+
+        }
+        .button {
+
+            @include button ; 
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .our-services .container .services-grid .card-container {
+            width: 50%;
+        }
+}
+@media only screen and (max-width: 800px) {
+    .our-services .container .services-grid .card-container {
+        width:100%;
+    }
+    .our-services .container .services-grid .card-container .service-card {
+        max-width: 80%;
+    }
+
+        .our-services .container .vector {
+            width: 200px;
+        }
+       
+}
