@@ -51,6 +51,175 @@
     display: none;
   }
 }
+.carousel {
+  width: 100%;
+}
+.carousel .container {
+  padding: 250px 0 150px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+.carousel .container .background-eff {
+  position: absolute;
+  left: -10px;
+  bottom: 250px;
+}
+.carousel .container .slider-container {
+  position: relative;
+  max-width: 1120px;
+  width: 100%;
+  padding: 64px 0 79px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 24px;
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+}
+.carousel .container .slider-container .effect {
+  position: absolute;
+  right: -51px;
+  top: -15px;
+}
+.carousel .container .slider-container h2 {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+.carousel .container .slider-container .divider {
+  width: 56px;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 70px;
+}
+.carousel .container .slider-container .review {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 110px;
+}
+.carousel .container .slider-container .review .left {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+}
+.carousel .container .slider-container .review .left .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+.carousel .container .slider-container .review .left .info .name {
+  font-weight: 700;
+  font-size: 22px;
+}
+.carousel .container .slider-container .review .left .info p {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.85);
+}
+.carousel .container .slider-container .review .right p {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  font-size: 19px;
+  max-width: 420px;
+}
+.carousel .container .navigation-container {
+  max-width: 336px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.carousel .container .navigation-container img {
+  cursor: pointer;
+}
+.carousel .container .navigation-container .dots-container {
+  max-width: 94px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  position: relative;
+  margin-top: 200px;
+  height: 432px;
+  width: 100%;
+  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}
+footer .effect {
+  position: absolute;
+  right: 70px;
+  top: -80px;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+footer .container .about {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .container .about .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .container .about .logo .circle {
+  background-color: white;
+  border-radius: 50%;
+  color: #5B9BF3;
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  height: 41px;
+}
+footer .container .about .logo p {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+footer .container .about p {
+  font-weight: 300;
+  max-width: 390px;
+  color: white;
+  font-size: 18px;
+}
+footer .container .about span {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
+footer .container .section h3 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+footer .container .section ul {
+  font-weight: 300;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 950px) {
+  footer .container {
+    flex-wrap: wrap;
+  }
+}
 .container {
   width: 100%;
   max-width: 1200px;
@@ -120,7 +289,8 @@ header .container .right img {
     align-items: center;
     gap: 50px;
   }
-  header .container .right, header .container .left {
+  header .container .right,
+header .container .left {
     max-width: 100%;
     width: 80%;
     display: flex;
@@ -219,6 +389,7 @@ header .container .right img {
 .our-services .container .button {
   border-radius: 55px;
   background-color: white;
+  transition: 0.15s;
   color: #458FF6;
   display: flex;
   align-items: center;
@@ -227,10 +398,14 @@ header .container .right img {
   font-weight: 700;
   border: none;
   border: 1px solid #458FF6;
-  max-width: 200px;
+  max-width: fit-content;
   margin: 0 auto;
   padding: 15px 50px;
   cursor: pointer;
+}
+.our-services .container .button:hover {
+  background-color: #458FF6;
+  color: white;
 }
 
 @media only screen and (max-width: 1160px) {
@@ -249,6 +424,213 @@ header .container .right img {
     width: 200px;
   }
 }
+.about-us {
+  width: 100%;
+}
+.about-us .container {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.about-us .container .heathcare-providers, .about-us .container .download-our-app {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: center;
+}
+.about-us .container .heathcare-providers .left, .about-us .container .download-our-app .left {
+  width: 50%;
+}
+.about-us .container .heathcare-providers .left img, .about-us .container .download-our-app .left img {
+  width: 100%;
+  max-width: 650px;
+}
+.about-us .container .heathcare-providers .right, .about-us .container .download-our-app .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about-us .container .heathcare-providers .right h2, .about-us .container .download-our-app .right h2 {
+  color: black;
+  font-size: 36px;
+  font-weight: 700;
+  max-width: 480px;
+}
+.about-us .container .heathcare-providers .right .divider, .about-us .container .download-our-app .right .divider {
+  width: 56px;
+  height: 2px;
+  background-color: black;
+}
+.about-us .container .heathcare-providers .right p, .about-us .container .download-our-app .right p {
+  font-weight: 300;
+  font-size: 18px;
+  max-width: 450px;
+}
+.about-us .container .heathcare-providers .right .button, .about-us .container .download-our-app .right .button {
+  border-radius: 55px;
+  background-color: white;
+  transition: 0.15s;
+  color: #458FF6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border: 1px solid #458FF6;
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 15px 50px;
+  cursor: pointer;
+  margin: 0;
+}
+.about-us .container .heathcare-providers .right .button:hover, .about-us .container .download-our-app .right .button:hover {
+  background-color: #458FF6;
+  color: white;
+}
+.about-us .container .download-our-app {
+  flex-direction: row-reverse;
+}
+.about-us .container .download-our-app .right .button {
+  max-width: fit-content;
+  gap: 10px;
+  padding: 12px 20px;
+}
+.about-us .container .download-our-app .right .button span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+  .about-us .container .heathcare-providers, .about-us .container .download-our-app {
+    flex-direction: column;
+  }
+  .about-us .container .heathcare-providers .left, .about-us .container .download-our-app .left, .about-us .container .heathcare-providers .right, .about-us .container .download-our-app .right {
+    width: 80%;
+  }
+}
+.last {
+  width: 100%;
+}
+.last .container {
+  overflow-x: initial;
+  display: flex;
+  flex-direction: column;
+  padding: 200px 0 0 0;
+  position: relative;
+}
+.last .container .about-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.last .container .about-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: black;
+}
+.last .container .about-section .divider {
+  width: 56px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: black;
+}
+.last .container .about-section p {
+  color: #7D7987;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  max-width: 950px;
+}
+.last .container .effect {
+  position: absolute;
+  top: 300px;
+  left: -50px;
+  z-index: -1;
+}
+.last .container .effect2 {
+  position: absolute;
+  right: -600px;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+.last .container .articles-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 0;
+  flex-wrap: wrap;
+}
+.last .container .articles-container .area-for-article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.3%;
+}
+.last .container .articles-container .area-for-article article {
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 35px;
+}
+.last .container .articles-container .area-for-article article h3 {
+  max-width: 251px;
+  font-weight: 700;
+  color: black;
+  font-size: 21px;
+}
+.last .container .articles-container .area-for-article article p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #7D7987;
+  max-width: 266px;
+}
+.last .container .articles-container .area-for-article article a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  color: #4089ED;
+}
+.last .container .button {
+  border-radius: 55px;
+  background-color: white;
+  transition: 0.15s;
+  color: #458FF6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border: 1px solid #458FF6;
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 15px 50px;
+  cursor: pointer;
+}
+.last .container .button:hover {
+  background-color: #458FF6;
+  color: white;
+}
+
+@media only screen and (max-width: 1180px) {
+  .last .container .articles-container .area-for-article {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .last .container .articles-container .area-for-article {
+    width: 100%;
+  }
+}
 @font-face {
   font-family: "Mulish";
   src: url("../../fonts/Mulish-VariableFont_wght.ttf");
@@ -262,6 +644,10 @@ ul, li {
   margin: 0;
   padding: 0;
   font-family: "Mulish";
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

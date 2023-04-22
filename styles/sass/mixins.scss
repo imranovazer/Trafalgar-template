@@ -27,6 +27,7 @@
 @mixin button {
    border-radius: 55px;
    background-color: white;
+   transition: 0.15s;
    color: #458FF6;
    display: flex;
    align-items: center;
@@ -35,8 +36,13 @@
    font-weight: 700;
    border: none;
    border: 1px solid #458FF6;
-   max-width: 200px;
-  margin: 0 auto;
-  padding: 15px 50px;
-  cursor: pointer;
+   // max-width: 200px;
+   max-width: fit-content;
+   margin: 0 auto;
+   padding: 15px 50px;
+   cursor: pointer;
+   &:hover {
+      background-color: #458FF6;
+      color: white;
+   }
 }
