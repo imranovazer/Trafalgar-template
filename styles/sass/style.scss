@@ -1,28 +1,28 @@
 @import 'vars';
-@import 'mixins' ;
+@import 'mixins';
 @import'components/navbar';
 @import 'components/carousel';
-@import 'components/footer' ;
+@import 'components/footer';
 @import 'outline/outline';
-@import 'sections/header' ;
-@import 'sections/our_services' ;
-@import 'sections/about-us' ;
-@import 'sections/last' ;
+@import 'sections/header';
+@import 'sections/our_services';
+@import 'sections/about-us';
+@import 'sections/last';
 
 @font-face {
     font-family: "Mulish";
     src: url('../../fonts/Mulish-VariableFont_wght.ttf');
 }
-ul, li {
+
+ul,
+li {
     list-style-type: none;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Mulish";
-}
-body {
-    overflow-x: hidden;
 }
 
